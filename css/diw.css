@@ -1,0 +1,682 @@
+body {
+    overflow-x: hidden;
+    user-select: none;
+}
+
+@media only screen and (max-width: 990px) {
+    .headerrightitems {
+        display: block !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .headerright {
+        display: none;
+        margin-top: 0px !important;
+        background: white !important;
+        right: 15px !important;
+        padding: 30px 30px !important;
+    }
+    #bars {
+        display: block !important;
+    }
+    #whowearedetail {
+        top: 215px;
+    }
+    #aboutusdetail {
+        top: 257px;
+    }
+    .detailcol {
+        border-bottom: 1px solid gray;
+        border-right: none !important;
+    }
+    #smallgallery {
+        display: block !important;
+    }
+    #smallgallery .col-md-4 {
+        padding-bottom: 25px;
+    }
+    #largegallery {
+        display: none !important;
+    }
+
+    #newlogodiv img{
+        margin:0px auto;
+        display: block;
+    }
+
+    #bottomrow{
+        position: relative !important;
+        width:auto !important;
+    }
+
+    #newnavigationdiv ul {
+        font-size: small;
+        text-align: center;
+        display: block !important;
+        text-transform: uppercase;
+        list-style-type: none;
+        color: white;
+        padding:0px;
+    }
+
+    #newnavigationdiv ul li{
+        display: block !important;
+        color: white;
+        padding-right: 0px !important;
+        margin-right: 0px !important;
+        padding: 5px !important;
+        border-bottom: 1px solid white;
+        border-right: none !important;
+        box-sizing: border-box;
+    }
+
+    #bottomnav ul {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+        color: white;
+        text-align: center;
+        background: #666;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: skew(-35deg);
+        /* padding-left: 30px; */
+        /* padding-right: 20px; */
+        padding: 5px;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        word-spacing: 2.5px;
+    }
+
+    #bottomnav ul li {
+        transform: skew(35deg);
+        display: inline-block;
+        color: white;
+        margin-right: 15px;
+        text-transform: uppercase;
+        font-size: x-small;
+    }
+
+    #newfootersection{
+        text-align: center;
+    }
+
+    #newfootersection .col-md-2{
+        margin-top:20px;
+    }
+
+    #rightfooter{
+        text-align: center !important;
+    }
+
+    .clipartdesc{
+        font-family: bankgothic;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+        font-size: smaller;
+        padding: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background: lightgray;
+        min-height: 10px !important;
+        overflow: hidden;
+        position: relative;
+        line-height: 20px;
+        font-weight: bold;
+        margin-top:22px !important;
+    }
+
+    .bottomtext{
+        margin-bottom: 22px;
+
+    }
+
+    .footerops {
+        display: block !important;
+        margin-right: 0px !important;
+        margin-bottom:20px;
+    }
+
+    .second, .third {
+        padding-left: 0px !important;
+    }
+
+    .secondfooteritemcontainer, .thirdfooteritemcontainer {
+        border-right: 0px solid white !important;
+        box-sizing: border-box;
+        border-left: 0px solid white !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+#smallgallery {
+    display: none;
+}
+
+#largegallery {
+    display: block;
+}
+
+#bars {
+    display: none;
+    position: absolute;
+    right: 25px;
+    top: 28px;
+}
+
+.headerrightitems {
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.navbarcaret {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 35px;
+}
+
+.active {
+    border-bottom: 2px solid #099bca;
+}
+
+.navbardetail {
+    z-index: 10;
+    position: fixed;
+    width: 100vw;
+    background: #e2e9ec;
+    left: 0px;
+    right: 0;
+    top: 85px;
+    height: auto;
+}
+
+.coltxt {
+    font-size: small;
+    color: #333;
+}
+
+.break {
+    height: 10px;
+}
+
+.detailcol {
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-right: 1px dashed grey;
+    height: 100%;
+}
+
+.detailcol div {
+    text-align: center;
+    padding: 10px 0px 0px;
+}
+
+.headerrightitems:hover {
+    color: #414042;
+    cursor: pointer;
+}
+
+.navbaritem:hover {
+    border-bottom: 2px solid #099bca;
+}
+
+.headerright {
+    display: block;
+    margin-top: 26px;
+    position: absolute;
+    right: 15px;
+    z-index: 50;
+}
+
+.chotabreak {
+    height: 4px;
+}
+
+.firstcut {
+    background-size: cover;
+    background-image: url('../assets/grayscale2.jpg');
+    height: 90vh;
+}
+
+.galleryimg {
+    transition: transform .1s;
+}
+
+.galleryimg:hover {
+    z-index: 500;
+    cursor: pointer;
+    transform: scale(1.1);
+    position: absolute;
+}
+
+.menuclickable {
+    text-decoration: none !important;
+    color: black;
+}
+
+.menuclickable:hover {
+    color: black;
+    text-decoration: none !important;
+}
+
+#top {
+    padding: 15px;
+    background-color: #a27600;
+    border-radius: 50px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    color:white;
+}
+
+#top:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* new stuff */
+
+@font-face {
+    font-family: bankgothic;
+    src: url(../assets/fonts/bankgothic-regular.ttf);
+}
+
+@font-face {
+    font-family: centurygothic;
+    src: url(../assets/fonts/CenturyGothic.ttf);
+}
+
+
+@font-face {
+    font-family: future;
+    src: url(../assets/fonts/frm.ttf);
+}
+
+#newheadersection {
+    font-size: smaller;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font-family: bankgothic;
+    position: relative;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#404041), to(#000000));
+}
+
+
+
+#mainrow {
+    position: relative;
+}
+
+#bottomnav {
+    text-align: center;
+}
+
+#bottomnav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    background: #666;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: skew(-35deg);
+    /* padding-left: 30px; */
+    /* padding-right: 20px; */
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    word-spacing: 2.5px;
+}
+
+#bottomrow {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+}
+
+#bottomnav ul li {
+    transform: skew(35deg);
+    display: inline-block;
+    color: white;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+
+#bottomnav ul li:last-child {
+    display: inline-block;
+    color: white;
+    margin-right: 0px;
+}
+
+#bottomnav ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#newlogodiv {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#newnavigationdiv {
+    display: table;
+    height: 115px;
+}
+
+#newnavigationdiv ul {
+    font-size: small;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+    text-transform: uppercase;
+    list-style-type: none;
+    color: white;
+}
+
+#newnavigationdiv ul li {
+    display: inline-block;
+    color: white;
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 1px solid white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#newnavigationdiv ul li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#newnavigationdiv ul li:last-child {
+    display: inline-block;
+    color: white;
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.footerheading{
+    font-family: bankgothic;
+    font-size:18px;
+    font-weight: bold;
+}
+
+.second, .third{
+    padding-left:40px;
+}
+
+.footeritem{
+    font-family: future;
+    color:white;
+    font-size: 14px;
+
+}
+
+.footeritem a{
+    
+    color:white;
+    /* text-decoration: none; */
+
+}
+
+.footeritem a:hover{
+    color:white;
+    cursor: pointer;
+}
+
+
+
+.skewed{
+    background: #000;
+    color: white;
+    transform: skew(-35deg);
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.skewed div{
+    font-family: future;
+    font-size: 19px;
+    transform: skew(35deg);
+}
+
+.skewed a{
+    color:white;
+}
+
+.skewed a:hover{
+    color:white;
+}
+
+#rightfooter{
+    text-align: right;
+}
+
+.social{
+    margin-top:10px;
+}
+
+.social span:hover{
+    cursor: pointer;
+}
+
+#newfootersection{
+    
+    padding-top:40px;
+    padding-bottom: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#A6A8AB), to(#58595b));
+}
+
+
+.footerops{
+    display:inline-block;
+    margin-right:20px;
+}
+
+.firstfooteritemcontainer{
+    /* border-right:1px solid white; */
+    box-sizing: border-box;
+}
+
+.secondfooteritemcontainer{
+    /* border-right:1px solid white; */
+    box-sizing: border-box;
+    border-left:1px solid white;
+    padding-left:40px;
+    padding-right: 15px;
+}
+
+.thirdfooteritemcontainer{
+    /* border-right:1px solid white; */
+    box-sizing: border-box;
+    border-left:1px solid white;
+    padding-left:40px;
+}
+
+
+.outer{
+    display: table;
+    width: 100%;
+    height:82vh;
+}
+
+.middle{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+
+#newsliderde{
+    background-image: url("https://images.pexels.com/photos/163518/war-desert-guns-gunshow-163518.jpeg?cs=srgb&dl=action-army-battle-163518.jpg&fm=jpg");
+    background-size: cover;
+    object-fit: center;
+}
+
+#newsliderse{
+    background-image: url("https://images.idgesg.net/images/article/2017/12/wyze_labs_inc_wyzecam-100743658-orig.jpg");
+    background-size: cover;
+    object-fit: center;
+}
+
+#newslidersc{
+    background-image: url("http://www.mach15groups.com/wp-content/uploads/2017/11/artificial-intelligence.jpg");
+    background-size: cover;
+    object-fit: center;
+}
+
+.slidercontent{
+    background: rgba(0, 0, 0, 0.50);
+    border:1px solid black;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 50px;
+    text-align: left;
+}
+
+.slidercontent h2{
+    color: #a27600;
+    padding: 0px;
+    margin:0px;
+    font-family: bankgothic;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.slidercontent p{
+    color:white;
+    padding: 0px;
+    margin:0px;
+    font-family: bankgothic;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+
+#clipartbanner{
+    background:#161817;
+}
+
+.clipart{
+    padding-top:25px;
+    padding-bottom:5px;
+    color:#a27600;
+}
+
+.clipart img{
+    width:70px;
+    height:70px;
+    padding:5px;
+    margin: 5px;
+}
+
+.clipartname{
+    font-family: bankgothic;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top:0px;
+    padding-bottom:25px;
+    color:#a27600;
+}
+
+.clipartdesc{
+    font-family: bankgothic;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font-size: smaller;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: lightgray;
+    overflow: hidden;
+    min-height: 650px;
+    position: relative;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.desccol{
+    position: relative;
+    overflow: hidden;
+}
+
+.clipartdescart{
+    font-size: 350px;
+    position: absolute;
+    bottom: -60px;
+    right: -115px;
+    opacity: 0.12;
+    color: #a27600;
+}
+
+.clipartdescart i{
+    display: inline;
+}
+
+.clipartdescart img{
+    width: 360px;
+}
+
+
+.bottomtext{
+    font-size: small;
+    font-family: bankgothic;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    background:black;
+    color:white;
+    padding: 10px;
+}
+
+#descrow{
+    background-image: url("../assets/justs.png");
+    background-position: center;
+    background-repeat-y:no-repeat;
+}
+
+.carousel-caption h3{
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    display: inline-block;
+    padding:20px 20px;
+    background:rgba(32, 31, 31, 0.80);
+    font-family: bankgothic;
+    color:#a27600;
+}
+
+.carousel-indicators .active{
+    font-family: bankgothic;
+    background:#a27600 !important;
+    border: 5px solid #a27600 !important;
+}
+
+.navactive{
+    color:#a27600 !important;
+}
+
+.carousalimg{
+    width:100%;
+    height:88vh !important;
+    object-fit:cover;
+    object-position:top;
+}

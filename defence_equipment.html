@@ -1,0 +1,451 @@
+<!doctype html>
+<html>
+
+ <head style="overflow-x:hidden">
+	<title>Defence Equipment - Secure Ideas Pvt. Ltd. - Official Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 ">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta content="assets/logosmall.png" itemprop="image">
+
+
+  <!-- HTML Meta Tags -->
+  <meta name="description" content="Secure Ideas (Private) Limited is an emerging company based on the ethos of providing a “one-stop solution” for the defence
+  indenting, security consultancy and security equipment. 
+	">
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Secure Ideas (Pvt.) Ltd. - Official Website">
+  <meta itemprop="description" content="Secure Ideas (Private) Limited is an emerging company based on the ethos of providing a “one-stop solution” for the defence
+  indenting, security consultancy and security equipment. ">
+  <meta itemprop="image" content="img/icon.ico?v=2">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="http://secureideasglobal.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Secure Ideas (Pvt.) Ltd. - Official Website ">
+  <meta property="og:description" content="Secure Ideas (Private) Limited is an emerging company based on the ethos of providing a “one-stop solution” for the defence
+  indenting, security consultancy and security equipment.">
+  <meta property="og:image" content="assets/logosmall.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="O2LifePurifier - Official ">
+  <meta name="twitter:description" content="We are a company motivated to provide pure and clean mineral water. Our state of the art filtration plant is equipped to eliminate all impurities ...">
+  <meta name="twitter:image" content="assets/logosmall.png">
+
+
+	<meta name="Keywords" content="Ideas Private,emerging company,ethos,focus,Quality,last mile,delivery,aim,clients,quality products,strong focus,vast clientele connections,local,international suppliers,vast experience,providing,equipment,welcome,query feel">
+
+
+
+	<link rel="icon" href="assets/logosmall.png" type="image/x-icon" />
+
+
+	<link rel="stylesheet" href="css/diw.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+	<script>
+		$(document).ready(function () {
+			$("#whowearecaret").hide();
+			$("#whowearedetail").hide();
+
+			$("#aboutuscaret").hide();
+			$("#aboutusdetail").hide();
+
+			$("#home").click(function () {
+				$("#aboutuscaret").hide();
+				$("#aboutusdetail").hide();
+				$("#aboutus").removeClass("active");
+
+				$("#whowearecaret").hide();
+				$("#whowearedetail").hide();
+				$("#whoweare").removeClass("active");
+
+				if ($("#home").hasClass("active")) {
+				} else {
+					$("#home").addClass("active");
+				}
+
+			});
+
+			$("a").click(function () {
+				$("#aboutuscaret").hide();
+				$("#aboutusdetail").hide();
+				$("#whowearecaret").hide();
+				$("#whowearedetail").hide();
+			})
+
+			$("#contactus").click(function () {
+				$("#aboutuscaret").hide();
+				$("#aboutusdetail").hide();
+				$("#aboutus").removeClass("active");
+				$("#home").removeClass("active");
+
+				$("#whowearecaret").hide();
+				$("#whowearedetail").hide();
+				$("#whoweare").removeClass("active");
+
+				if ($("#contactus").hasClass("active")) {
+
+				} else {
+					$("#contactus").addClass("active");
+				}
+
+			});
+
+			$("#whoweare").click(function () {
+				$("#aboutuscaret").hide();
+				$("#aboutusdetail").hide();
+				$("#aboutus").removeClass("active");
+				$("#home").removeClass("active");
+				$("#contactus").removeClass("active");
+
+				$("#whowearecaret").toggle("slow");
+				$("#whowearedetail").toggle("slow");
+				if ($("#whoweare").hasClass("active")) {
+					$("#whoweare").removeClass("active");
+				} else {
+					$("#whoweare").addClass("active");
+				}
+			});
+
+			$("#aboutus").click(function () {
+
+				$("#whowearecaret").hide();
+				$("#whowearedetail").hide();
+				$("#whoweare").removeClass("active");
+				$("#home").removeClass("active");
+				$("#contactus").removeClass("active");
+
+				$("#aboutuscaret").toggle("slow");
+				$("#aboutusdetail").toggle("slow");
+				if ($("#aboutus").hasClass("active")) {
+					$("#aboutus").removeClass("active");
+				} else {
+					$("#aboutus").addClass("active");
+				}
+
+			});
+
+			$(window).scroll(function () {
+				if ($('#whowearedetail').css('display') == 'block') {
+					$("#whoweare").addClass("active");
+					$("#home").removeClass("active");
+					$("#aboutus").removeClass("active");
+					$("#contactus").removeClass("active");
+
+					$("#whowearecaret").hide();
+					$("#whowearedetail").hide();
+				}
+
+				if ($('#aboutusdetail').css('display') == 'block') {
+					$("#home").addClass("active");
+					$("#whoweare").removeClass("active");
+					$("#aboutus").removeClass("active");
+					$("#contactus").removeClass("active");
+
+					$("#aboutuscaret").hide();
+					$("#aboutusdetail").hide();
+				}
+			});
+
+			$("#bars").click(function () {
+				$("#headerright").toggle("slow");
+			});
+
+			$("#top").click(function () {
+				$("html, body").animate({ scrollTop: 0 }, "slow"); return false;
+			});
+
+			$(window).resize(function () {
+				//do something
+
+				var width = $(document).width();
+				if (width > 770) {
+					// do something else
+					$("#headerright").css('display', 'block');
+				}
+			});
+		});
+	</script>
+
+
+</head>
+
+<body style="overflow-x:hidden">
+	<!-- header here -->
+	<section style="background:#f7f8f9">
+		<div class="row" style="height:85px;">
+			<div class="col-md-3" style="position:relative;height:100%">
+				<div style="position:absolute;top:18px;left:25px;">
+					<a href="#">
+						<img src="assets/logosmall.png" alt="Logo">
+					</a>
+				</div>
+				<span id="bars"><i class="fa fa-bars fa-2x"></i></span>
+			</div>
+			<div class="col-md-9" style="position:relative" id="aaa">
+				<div class="headerright" id="headerright">
+					<div class="headerrightitems">
+
+						<div class="navbaritem" id="home">
+							<a href="index.html" class="menuclickable">Home&nbsp;&nbsp;</a>
+							<!-- <span><i class="fa fa-home"></i></span> -->
+						</div>
+					</div>
+					<div class="headerrightitems">
+						<div class="navbaritem active" id="whoweare">
+							Products &amp; Services&nbsp;&nbsp;<span><i class="fa fa-angle-down"></i></span>
+						</div>
+						<div style="display:block" class="navbarcaret" id="whowearecaret">
+							<span><i class="fa fa-caret-up" style="font-size:36px;color:#e2e9ec"></i></span>
+						</div>
+						<div style="display:block" class="navbardetail" id="whowearedetail">
+							<div class="row">
+								<div class="col-md-4 detailcol">
+									<div>
+										<p>
+											<a  href="defence_equipment.html" class="coltxt active">Defence Equipment</a>
+										</p>
+									</div>
+								</div>
+								<!-- <div class="col-md-3 detailcol">
+									<div>
+										<p>
+											<a href="#defensesolutiondetails" class="coltxt">Defence Solutions</a>
+										</p>
+									</div>
+								</div> -->
+								<div class="col-md-4 detailcol">
+									<div>
+										<p>
+											<a href="security_equipment.html" class="coltxt">Security Equipment</a>
+										</p>
+									</div>
+								</div>
+								<div class="col-md-4 detailcol">
+									<div>
+										<p>
+											<a href="security_consultancy.html" class="coltxt">Security Consultancy</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="headerrightitems">
+						<div class="navbaritem " id="aboutus">
+							About Us&nbsp;&nbsp;<span><i class="fa fa-angle-down"></i></span>
+						</div>
+						<div style="display:block" class="navbarcaret" id="aboutuscaret">
+							<span><i class="fa fa-caret-up" style="font-size:36px;color:#e2e9ec"></i></span>
+						</div>
+						<div style="display:block" class="navbardetail" id="aboutusdetail">
+							<div class="row">
+								<!-- <div class="col-md-3 detailcol">
+									<div>
+										<p>
+											<a class="coltxt">Our Identity</a>
+										</p>
+									</div>
+								</div> -->
+								<div class="col-md-4 detailcol">
+									<div>
+										<p>
+											<a href="mission.html" class="coltxt">Mission</a>
+										</p>
+									</div>
+								</div>
+								<div class="col-md-4 detailcol">
+									<div>
+										<p>
+											<a href="vision.html" class="coltxt">Vision</a>
+										</p>
+									</div>
+								</div>
+								<div class="col-md-4 detailcol">
+									<div>
+										<p>
+											<a href="values.html" class="coltxt">Values</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="headerrightitems">
+						<div class="navbaritem" id="contactus">
+							<a href="#contactusdetails" class="menuclickable">Contact Us&nbsp;&nbsp;</a>
+
+							<!-- <span><i class="fa fa-angle-down"></i></span> -->
+						</div>
+					</div>
+					<!-- <div class="headerrightitems">
+						<div class="navbaritem">
+							Innovation&nbsp;&nbsp;<span><i class="fa fa-angle-down"></i></span>
+						</div>
+					</div>
+					<div class="headerrightitems">
+						<div class="navbaritem ">
+							Investors&nbsp;&nbsp;
+						</div>
+					</div>
+					<div class="headerrightitems">
+						<div class="navbaritem ">
+							Careers&nbsp;&nbsp;<span><i class="fa fa-angle-down"></i></span>
+						</div>
+					</div>
+					<div class="headerrightitems">
+						<span><i style="font-size:24px;" class="fa fa-globe"></i></span>
+					</div>
+					<div class="headerrightitems">
+						<span><i style="font-size:24px;" class="fa fa-search"></i></span>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section>
+		<div class="container">
+			<div class="col-md-10 col-md-offset-1">
+				
+				<br>
+				<h3 id="defenseequipmentdetails" class="text-center">Defence Equipment</h3>
+				<br>
+				<p class="text-justify" style="border-left:10px solid gray; padding-left:20px;">
+					Our priority is understanding the needs and requirements of our clients and ensure we comply to international standards of
+					quality and delivery of our products and services. We provide a vast array of products for your Defence needs. We provide
+					a host of products ranging from General Defence Equipment, Protection Equipment, Communication Equipment, Clothing and
+					Web Equipment among others such as:
+				</p>
+				<br><br>
+				<div class="row">
+					<div class="col-md-12" style="box-sizing:border-box;">
+						<img src="http://toe2linetactical.com/wp-content/uploads/2017/01/tc7.jpg" style="object-fit:cover;width:100%;display:block;margin-left:auto;margin-right:auto;"
+						 alt="">
+						<br>
+						<br>
+						<p class="text-justify">General Defence Equipment including Night vision sights, thermal sights, FCIs, Parachutes and gear, combat equipment
+							including: ,weapon sights, scopes, aiming devices which can be used with M4 riffle(ANPEQ, ATPAL) ammunition , Personal
+							load bearing Equipment, body armours of different categories, Camouflage items, footwears, headgear simple and ballistic,
+							protective items to include diving suits, eye wears, ear muffs, Knee pads, elbow pads, uniforms, and anti- riot equipment
+							among many others </p>
+						<br>
+					</div>
+					<div class="col-md-4" style="box-sizing:border-box;">
+						<img src="http://s-media-cache-ak0.pinimg.com/564x/ac/e8/ef/ace8eff8d057754f863183a4b3e34e05.jpg" style="width: 100%;
+							/* width: 100%; */
+							height: 337px;
+							display: block;
+							margin-left: auto;
+							margin-right: auto;
+							object-fit: cover;" alt="">
+						<br>
+						<p class="text-justify">Protection Equipment including Kewlar helmets, bullet proof vehicles, body armour jackets, ballistic shields</p>
+					</div>
+					<div class="col-md-4" style="box-sizing:border-box;">
+						<img src="https://i.pinimg.com/originals/e3/dd/d0/e3ddd0b1be4bbd3cbe9ead7e206a10f7.png" style="width:100%;display:block;margin-left:auto;margin-right:auto;"
+						 alt="">
+						<br>
+						<p class="text-justify">
+							Communication Equipment including handheld sets, bas stations and IT solutions among others
+						</p>
+					</div>
+					<div class="col-md-4" style="box-sizing:border-box;">
+						<img src="http://i113.photobucket.com/albums/n205/brandonblauer/NecessaryTacticalGear_zpsb58882e0.jpg" style="width:100%;display:block;margin-left:auto;margin-right:auto;"
+						 alt="">
+						<br>
+						<p class="text-justify">
+							Clothing and Web Equipment including clothing, web equipment, Load Bearing Eequipment (LBE), hydration systems, backpacks
+							and holsters among others
+						</p>
+					</div>
+				</div>
+				<br><br> We are always welcome to listening to you, and should you have any query, feel free to <a href="#contactusdetails">Contact us</a>				and our representative will arrange for a meeting or answer your queries.
+
+
+
+
+			</div>
+		</div>
+	</section>
+
+	<br><br>
+	<section style="padding-top:25px;padding-bottom:25px;color:white;background-attachment:fixed; background-size:cover; background-image:url('https://www.choicefurnituresuperstore.co.uk/product_gallery_images/69818/4_Lyon-Platinum-and-Light-Grey-Gloss-Display-Cabinet-Large-Narrow-Left-Hand(Including-LED-Lighting)-04.jpg');">
+		<div class="container">
+			<div class="col-md-10 col-md-offset-1">
+				<h3 id="aboutusdetails" class="text-center">About Us</h3>
+				<p class="text-justify">
+					Secure Ideas (Private) Limited is an emerging company based on the ethos of providing a “one-stop solution” for the defence
+					indenting, security consultancy and security equipment. With a focus on Quality and last mile service delivery, our
+					aim is to enable our clients to meet their needs quickly, efficiently and at competitive prices, sourcing the best products
+					by tapping into our strong local and international network besides providing bespoke consultancy services for our diverse
+					clientele. Our aim is to provide our clients with quality products with a strong focus on customer experience up until
+					the ‘last mile’ delivery of products and services. With our vast clientele, connections and networks with local and
+					international suppliers, we look to form long-lasting relationships. We have vast experience in providing security consultancy,
+					security equipment and other defence related equipment with our team comprising of personnel of retired military personnel,
+					along with expertise in international business markets, project management, legal affairs, marketing and procurement.
+					Our priority is understanding the needs and requirements of our clients and ensure we comply to international standards
+					of quality and delivery of our products and services. We are always welcome to listening to you, and should you have
+					any query, feel free to Contact us and our representative will arrange for a meeting or answer your queries.
+
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="contactusdetails" style="padding-bottom:15px;">
+		<iframe style="clear:both;width:100%; height:250px;" src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d1659.7086408826297!2d72.97072268591386!3d33.69814981464649!3m2!1i1024!2i768!4f13.1!2m1!1sExecutive+Center+E-11!5e0!3m2!1sen!2s!4v1553523534408"
+		 width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<div class="container">
+			<div class="col-md-10 col-md-offset-1">
+
+				<p class="lead text-center" style="padding-top:15px; text-decoration:underline">Contact Us</p>
+				<p class="text-center">
+					Secure Ideas (Pvt.) Ltd, 4th Floor, Executive Center, SCHS, E-11/2-3 Markaz, Islamabad <br>
+				</p>
+
+				<div class="row">
+					<div class="col-md-4 text-right">
+						<span><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;+92 (51) 2305630</span>
+					</div>
+					<div class="col-md-4 text-center">
+						<span><i class="fa fa-fax"></i>&nbsp;&nbsp;&nbsp;+92 (51) 8311951</span>
+					</div>
+					<div class="col-md-4 text-left">
+						<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;info@secureideasglobal.com</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<div id="top">Top</div>
+
+
+
+
+
+</body>
+
+</html>
